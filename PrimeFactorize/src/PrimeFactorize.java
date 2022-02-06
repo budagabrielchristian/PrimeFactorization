@@ -98,10 +98,10 @@ public class PrimeFactorize implements ActionListener {
 
             if (verifyForStringInput(input)) {
                 inputtedNumber = convertToInteger(input);
+                displayPrimeFactors.setText("Factors: " + getPrimeFactors(inputtedNumber));
             } else {
                 JOptionPane.showConfirmDialog(frame, "Invalid Input", "!", JOptionPane.CLOSED_OPTION);
             }
-            displayPrimeFactors.setText("Factors: " + getPrimeFactors(inputtedNumber));
         }
     }
 }
