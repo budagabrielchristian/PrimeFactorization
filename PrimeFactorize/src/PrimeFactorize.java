@@ -68,11 +68,12 @@ public class PrimeFactorize implements ActionListener {
         LinkedList<Integer> primeFactors = new LinkedList<>();
         HashMap<Integer, Integer> sortedPrimeFactors = new HashMap<>();
         String outputFactors = "";
-
+        int divideInputBy = 2;
+        
         if(input == 0){
             return null;
         }
-        int divideInputBy = 2;
+        
         while (input > 1) {
             if (input % divideInputBy == 0) {
                 primeFactors.add(divideInputBy);
